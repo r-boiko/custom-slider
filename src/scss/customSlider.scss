@@ -1,0 +1,59 @@
+.customSlider{
+  position: relative;
+  white-space: nowrap;
+  overflow-x: hidden;
+  user-select: none;
+  &-wrapper{
+    transform: translate(0%,0%);
+    transition: all .3s;
+  }
+  &-slide{
+    display: inline-block;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  &-controls{
+    &--nav{
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+      .icon{
+        fill: #ffffff;
+        transition: all .3s;
+      }
+      &:hover{
+        .icon{
+          opacity: .5;
+        }
+      }
+      &.prev{
+        left: 15px;
+      }
+      &.next{
+        right: 15px;
+      }
+    }
+  }
+  &-dots{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+    .dot{
+      cursor: pointer;
+      .icon{
+        fill: #ffffff;
+        transition: all .3s;
+      }
+      &:hover, &.active{
+        .icon{
+          opacity: .5;
+        }
+      }
+    }
+  }
+}

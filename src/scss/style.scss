@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+@import "vars";
+@import "fonts";
+@import "header";
+@import "footer";
+// import custom slider
+@import "customSlider";
+
+html, body{
+  overflow-x: hidden;
+  font-family: $font-stack;
+  font-size: 18px;
+}
+
+@import "media";
